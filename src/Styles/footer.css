@@ -1,0 +1,36 @@
+/* footer.css */
+
+.footer-main-container {
+        margin-top: 10rem;
+        border-top: solid black 1px;
+        padding-top: 1.5rem; /* Añade espacio encima del contenido */
+      }
+      
+      .footer-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      
+      .footer-container img {
+        width: 50px;
+        padding-right: 1rem;
+      }
+      
+      .footer-container p {
+        margin: 0;
+        font-size: 14px;
+        color: #1b1b1b;
+        margin-right: 10px;
+        margin-top: 1rem;
+      }
+      .footer-container a {
+        font-size: 14px;
+        color: #2e2e2e;
+        margin-right: 10px;
+        margin-top: 1rem;
+      }
+.footer-link:hover{
+        color: #b20000;
+}

@@ -1,0 +1,115 @@
+:root {
+  --blue-rgb: 133 199 188;
+  --green-rgb: 200 120 140;
+  --brown-rgb: 255 218 185;
+  --orange-rgb: 220 208 255;
+}
+
+.modal-body:has(.card[data-color="blue"]:hover) {
+  background-color: rgb(var(--blue-rgb) / 96%);
+  transition: 0.8s;
+}
+
+.modal-body:has(.card[data-color="green"]:hover) {
+  background-color: rgb(var(--green-rgb) / 96%);
+  transition: 0.8s;
+}
+
+.modal-body:has(.card[data-color="brown"]:hover) {
+  background-color: rgb(var(--brown-rgb) / 96%);
+  transition: 0.8s;
+}
+
+.modal-body:has(.card[data-color="orange"]:hover) {
+  background-color: rgb(var(--orange-rgb) / 96%);
+  transition: 0.8s;
+}
+
+#cards {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 5rem; /* Agrega espacio entre las cartas */
+  margin-left: 1rem;
+  padding: 1rem;
+}
+
+.card {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  cursor: pointer;
+  outline: none;
+  transition: scale 100ms;
+  font-size: 30px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 0.5rem;
+  margin-top: 3.5rem;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s, border-color 0.3s;
+  border: solid #333 1px;
+}
+
+
+.card-title {
+  font-size: 2rem;
+  color: #333; /* Color blanco para el título */
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  border-bottom: solid black 1px;
+}
+
+.card-description {
+  font-size: 1.5rem;
+  color: #333; /* Color blanco para la descripción */
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.card:hover .card-title,
+.card:hover .card-description {
+  color: #000000;
+}
+.card:hover {
+  border-color: transparent;
+  transform: translateY(-5px);
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.2);
+  background-color: #f1f1f1;
+
+}
+.card .card-image {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho del contenedor */
+  aspect-ratio: 3/2; /* 2/3 rectángulo */
+  border-radius: 1rem; /* Ajusta el redondeo de los bordes */
+}
+.image-container {
+  transition: transform 0.3s ease-in-out, filter 0.3s;
+}
+
+.image-container:hover {
+  transform: scale(1.1);
+  filter: brightness(1.1);
+}
+
+.card-logo-skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Espacio entre las imágenes */
+}
+
+.logo-skills-img{
+  width: 80px;
+  height: 80px;
+}
+
+@media  screen and (max-width: 980px){
+  #cards{
+    display: flex;
+    flex-direction: column;
+  }
+}

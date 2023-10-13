@@ -1,0 +1,16 @@
+.about-me-container {
+        text-align: left;
+        padding: 2rem;
+        border-radius: 20px;
+      }
+      
+      .about-me-container h2 {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+      }
+      
+      .about-me-container p {
+        font-size: 1.3rem;
+        line-height: 1.5;
+      }
+      
